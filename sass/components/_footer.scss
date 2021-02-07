@@ -1,0 +1,48 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $footer-background;
+
+  &__content {
+    display: block;
+    margin-right: 70px;
+  }
+
+  &__logo {
+    color: $primary-white-color;
+  }
+
+  &__location {
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+    color: $primary-white-color;
+
+    font-style: normal;
+    font-weight: $primary-font-weight;
+    font-size: $primary-font-size;
+    line-height: $address-line-height;
+    letter-spacing: 0.03em;
+  }
+
+  &__link {
+    color: $secondary-footer-color;
+
+    text-decoration: none;
+    font-weight: $primary-font-weight;
+    font-size: $primary-font-size;
+    line-height: $address-line-height;
+    letter-spacing: 0.03em;
+    transition: color $animation-duration $animation-type;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+
+  &__.item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}

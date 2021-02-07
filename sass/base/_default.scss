@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: $primary-text-color;
+  background-color: $primary-white-color;
+  font-family: $primary-font-family;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* утилита list для сброса маркеров в списках */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.center {
+  text-align: center;
+}
+
+.thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  color: $title-text-color;
+
+  font-weight: $third-font-weight;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}

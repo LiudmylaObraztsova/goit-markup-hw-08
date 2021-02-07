@@ -1,0 +1,13 @@
+.section {
+  display: flex;
+  padding: 94px 0;
+  margin: 0 auto;
+
+  &__description {
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+  &__team {
+    background-color: $secondary-background;
+  }
+}

@@ -1,0 +1,12 @@
+.page-header {
+  &__section {
+    padding: 0;
+    border-bottom: 1px solid #ececec;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+}
