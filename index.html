@@ -15,10 +15,10 @@
 
 <body>
   <header class="page-header">
-    <section class="page-header__section">
-      <div class="container page-header__container">
+    <div class="container page-header__container">
+      <a href="#" class="logo page-header__logo"><span class="logo--accent">Web</span>Studio</a>
+      <div class="main-container">
         <nav class="main-nav">
-          <a href="#" class="logo main-nav__logo"><span class="logo--accent">Web</span>Studio</a>
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a class="site-nav__link site-nav__link--current" href="#">Студия</a>
@@ -34,20 +34,21 @@
         <div class="contacts__info">
           <ul class="contacts list">
             <li class="contacts__item">
-              <a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16"
-                  height="12">
+              <a class="contacts__link mail__contacts" href="mailto:info@devstudio.com"><svg
+                  class="contacts__icon icon-mail" width="16" height="12">
                   <use href="./image/sprite.svg#envelope"></use>
                 </svg>info@devstudio.com</a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link" href="tel:380961111111"><svg class="contacts__icon" width="10" height="16">
+              <a class="contacts__link phone__contacts" href="tel:380961111111"><svg class="contacts__icon icon-phone"
+                  width="10" height="16">
                   <use href="./image/sprite.svg#smartphone"></use>
                 </svg>+38 096 111 11 11</a>
             </li>
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   </header>
   <main>
     <!--секция Герой-->
@@ -120,9 +121,9 @@
     </section>
 
     <!--секция 3-->
-    <section class="section section__description">
+    <section class="section">
       <div class="container">
-        <h2 class="title">Чем мы занимаемся</h2>
+        <h2 class="sub-title">Чем мы занимаемся</h2>
         <ul class="description list">
           <li class="description__item">
             <img src="./image/img.jpg" alt="набор текста" width="370" height="294" />
