@@ -3,11 +3,11 @@
   text-decoration: none;
   font-family: $secondary-font-family;
   font-weight: $third-font-weight;
-  font-size: $logo-font-size;
+  font-size: $logo-second-size;
   line-height: $line-height-logo;
   letter-spacing: 0.03em;
   @media screen and (min-width: $desktop) {
-    font-size: $logo-second-size;
+    font-size: $logo-font-size;
   }
 
   &--accent {
