@@ -1,7 +1,11 @@
 .send-form {
   &__email {
-    display: inline-flex;
+    display: block;
     align-items: center;
+    // margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+      display: inline-flex;
+    }
   }
 
   &__text {
@@ -25,7 +29,11 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 15px 256px 15px 16px;
-    margin-right: 12px;
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
 
     color: $secondary-footer-color;
   }

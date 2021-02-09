@@ -1,5 +1,10 @@
 .follow-us {
-  margin-right: 93px;
+  margin-right: 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 
   &__text {
     color: $primary-white-color;
