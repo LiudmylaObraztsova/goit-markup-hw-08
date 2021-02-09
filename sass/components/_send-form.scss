@@ -2,9 +2,11 @@
   &__email {
     display: block;
     align-items: center;
+    width: 450px;
     // margin-bottom: 30px;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
       display: inline-flex;
+      width: 570px;
     }
   }
 
@@ -21,7 +23,8 @@
   }
 
   &__input {
-    width: 358px;
+    // width: 358px;
+    width: 100%;
     height: 50px;
     background-color: $footer-background;
     border: 1px solid $footer-form;
@@ -30,7 +33,7 @@
     border-radius: 4px;
     padding: 15px 256px 15px 16px;
     margin-bottom: 20px;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 0;
       margin-right: 12px;
     }
@@ -48,3 +51,54 @@
     color: rgba(255, 255, 255, 0.6);
   }
 }
+
+// .send-form {
+//   &__email {
+//     display: block;
+//     align-items: center;
+//     // margin-bottom: 30px;
+//     @media screen and (min-width: $tablet) {
+//       display: inline-flex;
+//     }
+//   }
+
+//   &__text {
+//     color: $primary-white-color;
+//     font-style: normal;
+//     font-weight: $third-font-weight;
+//     font-size: $primary-font-size;
+//     line-height: $primary-line-height;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     margin-top: 0;
+//     margin-bottom: 20px;
+//   }
+
+//   &__input {
+//     width: 358px;
+//     height: 50px;
+//     background-color: $footer-background;
+//     border: 1px solid $footer-form;
+//     box-sizing: border-box;
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//     padding: 15px 256px 15px 16px;
+//     margin-bottom: 20px;
+//     @media screen and (min-width: $tablet) {
+//       margin-bottom: 0;
+//       margin-right: 12px;
+//     }
+
+//     color: $secondary-footer-color;
+//   }
+
+//   &__email input::placeholder {
+//     font-weight: $primary-font-weight;
+//     font-size: $secondary-font-size;
+//     line-height: $placeholder-line-height;
+//     align-items: center;
+//     letter-spacing: 0.03em;
+
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+// }
