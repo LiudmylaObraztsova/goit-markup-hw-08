@@ -5,7 +5,6 @@
   max-width: 480px;
   max-height: 400px;
   padding: 118px 0;
-  // color: $primary-white-color;
 
   background-color: $footer-background;
 
@@ -62,7 +61,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/hero/hero@2x.jpg");
+        url("../images/overlay/hero@2x.jpg");
     }
   }
 
@@ -75,36 +74,23 @@
     padding: 200px;
   }
 
-  &__container {
+  .hero__container {
     max-width: 360px;
-    margin: 0 auto auto;
+    margin: 0 auto 30px auto;
     @media screen and (min-width: $desktop) {
       max-width: 696px;
     }
-    // &__title {
-    //   color: $primary-white-color;
-    //   font-size: 26px;
-    //   line-height: 1.6;
-    //   letter-spacing: 0.06em;
-    //   text-transform: uppercase;
+    &__title {
+      color: $primary-white-color;
+      font-size: 26px;
+      line-height: 1.6;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
 
-    //   @media screen and (min-width: $desktop) {
-    //     font-size: 44px;
-    //     line-height: 1.37;
-    //   }
-    // }
-  }
-  &__title {
-    color: $primary-white-color;
-    font-size: 26px;
-    line-height: 1.6;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-
-    @media screen and (min-width: $desktop) {
-      font-size: 44px;
-      line-height: 1.37;
+      @media screen and (min-width: $desktop) {
+        font-size: 44px;
+        line-height: 1.37;
+      }
     }
   }
   .button {

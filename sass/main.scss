@@ -5,8 +5,7 @@
 @import "components/container";
 @import "components/page-header";
 @import "components/logo";
-@import "components/hero";
-// @import "components/overlay";
+// @import "components/hero";
 @import "components/button";
 @import "components/features";
 @import "components/description";
@@ -19,6 +18,6 @@
 // @import "components/buttons";
 // @import "components/portfolio";
 // @import "components/portfolio-overlay";
-// @import "components/backdrop";
-// @import "components/modal";
-// @import "components/modal-checkbox";
+@import "components/backdrop";
+@import "components/modal";
+@import "components/modal-checkbox";
