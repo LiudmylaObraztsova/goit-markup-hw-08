@@ -1,167 +1,27 @@
 .hero {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
-  max-width: 480px;
-  max-height: 400px;
-  padding: 118px 0;
-  color: $primary-white-color;
 
-  background-color: $footer-background;
-
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero/hero-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/hero/hero-mobile@2x.jpg");
-  }
-  @media screen and (min-width: $mobile) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero/hero-tablet.jpg);
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url("../images/hero/hero-tablet@2x.jpg");
-    }
+  &__container {
+    display: block;
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  @media screen and (min-width: $tablet) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero/hero.jpg);
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url("../images/hero/hero@2x.jpg");
-    }
-  }
-
-  @media screen and (min-width: $tablet) {
-    max-width: 768px;
-  }
-  @media screen and (min-width: $desktop) {
-    max-width: 1600px;
-    max-height: 600px;
-    padding: 200px;
-  }
-
-  .hero__container {
-    max-width: 360px;
-    margin: 0 auto;
-    @media screen and (min-width: $desktop) {
-      max-width: 696px;
-    }
-    &__title {
-      color: $primary-white-color;
-      font-size: 26px;
-      line-height: 1.6;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 30px;
-
-      @media screen and (min-width: $desktop) {
-        font-size: 44px;
-        line-height: 1.37;
-      }
-    }
-  }
-  .button {
-    display: inline-flex;
-    border: 1px solid transparent;
-    min-width: 200px;
-    height: 50px;
-    border-radius: 4px;
-    padding: 10px 32px;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-
-    background-color: $accent-color;
+  &__title {
     color: $primary-white-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    font-weight: $third-font-weight;
-    font-size: $secondary-font-size;
-    line-height: $button-line-height;
+    display: block;
+    font-weight: $hero-font-weight;
+    font-size: $hero-font-size;
+    line-height: 1.36;
+    text-align: center;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
   }
 }
-
-// .button {
-//   display: inline-flex;
-//   border: 1px solid transparent;
-//   min-width: 200px;
-//   height: 50px;
-//   border-radius: 4px;
-//   padding: 10px 32px;
-//   align-items: center;
-//   text-align: center;
-//   cursor: pointer;
-
-//   background-color: $accent-color;
-//   color: $primary-white-color;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-//   font-weight: $third-font-weight;
-//   font-size: $secondary-font-size;
-//   line-height: $button-line-height;
-//   letter-spacing: 0.06em;
-// }
-
-// .hero {
-//   display: flex;
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-
-//   text-align: center;
-
-//   &__container {
-//     display: block;
-//     width: 696px;
-//     margin-right: auto;
-//     margin-left: auto;
-//   }
-
-//   &__title {
-//     color: $primary-white-color;
-
-//     display: block;
-//     font-weight: $hero-font-weight;
-//     font-size: $hero-font-size;
-//     line-height: 1.36;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     margin-bottom: 30px;
-//   }
-// }

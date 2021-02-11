@@ -1,3 +1,5 @@
+// отредактировано
+
 html {
   box-sizing: border-box;
 }
@@ -36,6 +38,17 @@ h5 {
   margin-top: 0;
   margin-bottom: 0;
 }
+// .container {
+//   margin: 0 auto;
+//   width: 1200px;
+//   padding: 0 15px;
+// }
+
+// .container__footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: baseline;
+// }
 
 .center {
   text-align: center;
@@ -55,32 +68,6 @@ h5 {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-  }
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-  }
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
-  }
-}
-
-.sub-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-
-  text-align: center;
-  color: $title-text-color;
-  font-size: $title-font-size;
-  font-weight: $third-font-weight;
-  line-height: $title-line-height;
-
-  @media screen and (max-width: 1199px) {
-    display: none;
-    // margin-bottom: 50px;
-  }
 }
 
 .visually-hidden {
