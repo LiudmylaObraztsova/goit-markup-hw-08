@@ -1,5 +1,6 @@
 .hero {
   display: flex;
+  height: 400px;
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -8,6 +9,7 @@
   &__container {
     display: block;
     width: 696px;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
   }

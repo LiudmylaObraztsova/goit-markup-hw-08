@@ -2,12 +2,27 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  // &__item {
+  //   display: block;
+  //   width: 370px;
+  //   // height: 100%;
+  //   margin: 15px;
+  // }
   &__item {
-    display: block;
-    width: 370px;
-    // height: 100%;
+    width: calc(100% - 30px);
     margin: 15px;
+
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 60px) / 2);
+    }
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 90px) / 3);
+    }
   }
 
   &__card {
@@ -22,14 +37,17 @@
 
   &__image {
     display: block;
+    width: 100%;
+    height: 100hv;
   }
 
   &__link {
-    display: block;
+    display: inline-block;
     text-decoration: none;
-    height: 404px;
-    width: 370px;
-    // height: 100%;
+    // height: 404px;
+    // width: 370px;
+    width: 100%;
+    height: 100;
     border: 1px solid $border-color-card;
     overflow: hidden;
     cursor: pointer;

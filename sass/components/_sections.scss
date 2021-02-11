@@ -1,9 +1,26 @@
 // отредактировано
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
   margin: 0 auto;
 
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
+  &__description {
+    display: block;
+    padding: 94px 0;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
   &__team {
     background-color: $secondary-background;
+    // padding: 94px 0;
+    @media screen and (min-width: $tablet) {
+      padding: 60px 0;
+      @media screen and (min-width: $desktop) {
+        padding: 94px 0;
+      }
+    }
   }
 }
