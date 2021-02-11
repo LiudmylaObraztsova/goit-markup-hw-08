@@ -128,15 +128,44 @@
         <h2 class="sub-title">Чем мы занимаемся</h2>
         <ul class="description list">
           <li class="description__item">
-            <img src="./images/img.jpg" alt="набор текста" width="370" height="294" />
+            <picture>
+              <source srcset="
+                                                          ./images/description/img1.webp    1x,
+                                                          ./images/description/img1@2x.webp 2x
+                                                        " type="image/webp" />
+              <img class="description__photo" srcset="
+                                                          ./images/description/img1.jpg    1x,
+                                                          ./images/description/img1@2x.jpg 2x
+                                                        " src="./images/description/img1.jpg" alt="набор текста" width="370px"
+                height="294px" />
+            </picture>
             <h3 class="description__title">Десктопные приложения</h3>
           </li>
           <li class="description__item">
-            <img src="./images/img(1).jpg" alt="работа над макетом" width="370" height="294" />
+            <source srcset="
+                                                                      ./images/description/img2.webp    1x,
+                                                                      ./images/description/img2@2x.webp 2x
+                                                                    " type="image/webp" />
+            <img class="description__photo" srcset="
+                                                                      ./images/description/img2.jpg    1x,
+                                                                      ./images/description/img2@2x.jpg 2x
+                                                                    " src="./images/description/img2.jpg" alt="работа над макетом"
+              width="370px" height="294px" />
+            </picture>
             <h3 class="description__title">Мобильные приложения</h3>
           </li>
           <li class="description__item">
-            <img src="./images/img(2).jpg" alt="работа с цветом" width="370" height="294" />
+            <picture>
+              <source srcset="
+                                                                      ./images/description/img3.webp    1x,
+                                                                      ./images/description/img3@2x.webp 2x
+                                                                    " type="image/webp" />
+              <img class="description__photo" srcset="
+                                                                      ./images/description/img3.jpg    1x,
+                                                                      ./images/description/img3@2x.jpg 2x
+                                                                    " src="./images/description/img3.jpg"
+                alt="работа с цветовой палитрой" width="370px" height="294px" />
+            </picture>
             <h3 class="description__title">Дизайнерские решения</h3>
           </li>
         </ul>
@@ -149,7 +178,26 @@
         <h2 class="title">Наша команда</h2>
         <ul class="team list">
           <li class="team__item">
-            <img src="./images/foto1.jpg" alt="дизайнер проекта" width="270" height="260" />
+            <picture>
+              <source srcset="
+                                            ./images/product-designer/product-designer-mobile.webp    1x,
+                                            ./images/product-designer/product-designer-mobile@2x.webp 2x,
+                                            ./images/product-designer/product-designer-mobile.jpg     1x,
+                                            ./images/product-designer/product-designer-mobile@2x.jpg  2x
+                                          " media="(max-width: 767px)" type="images/webp" />
+              <source srcset="
+                                            ./images/product-designer/product-designer-tablet.webp    1x,
+                                            ./images/product-designer/product-designer-tablet@2x.webp 2x,
+                                            ./images/product-designer/product-designer-tablet.jpg     1x,
+                                            ./images/product-designer/product-designer-tablet@2x.jpg  2x
+                                          " media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+              <source srcset="
+                                            ./images/product-designer/product-designer.webp 1x,
+                                            ./images/product-designer/product-designer.jpg  1x
+                                          " media="(min-width: 1200px)" type="image/webp" />
+              <img class="team-card__photo" src="./images/product-designer/product-designer-tablet.jpg" alt="дизайнер проекта"
+                width="354px" height="374px" />
+            </picture>
             <div class="card">
               <h3 class="card__title">Игорь Демьяненко</h3>
               <p lang="en" class="card__text">Product Designer</p>
@@ -186,7 +234,27 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/foto2.jpg" alt="разработчик" width="270" height="260" />
+            <picture>
+              <source srcset="
+                                            ./images/frontend-dev/frontend-dev-mobile.webp    1x,
+                                            ./images/frontend-dev/frontend-dev-mobile@2x.webp 2x,
+                                            ./images/frontend-dev/frontend-dev-mobile.jpg     1x,
+                                            ./images/frontend-dev/frontend-dev-mobile@2x.jpg  2x
+                                          " media="(max-width: 767px)" type="image/webp" />
+              <source srcset="
+                                            ./images/frontend-dev/frontend-dev-tablet.webp    1x,
+                                            ./images/frontend-dev/frontend-dev-tablet@2x.webp 2x,
+                                            ./images/frontend-dev/frontend-dev-tablet.jpg     1x,
+                                            ./images/frontend-dev/frontend-dev-tablet@2x.jpg  2x
+                                          " media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+              <source srcset="
+                                            ./images/frontend-dev/frontend-dev.webp 1x,
+                                            ./images/frontend-dev/frontend-dev.jpg  1x
+                                          " media="(min-width: 1200px)" type="image/webp" />
+              <img class="team-card__photo" src="./images/frontend-dev/frontend-dev-tablet.jpg" alt="фронтенд-разработчик"
+                width="354px" height="374px" />
+            </picture>
+
             <div class="card">
               <h3 class="card__title">Ольга Репина</h3>
               <p lang="en" class="card__text">Frontend Developer</p>
@@ -223,7 +291,26 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/foto3.jpg" alt="маркетолог" width="270" height="260" />
+            <picture>
+              <source srcset="
+                                            ./images/marketing/marketing-mobile.webp    1x,
+                                            ./images/marketing/marketing-mobile@2x.webp 2x,
+                                            ./images/marketing/marketing-mobile.jpg     1x,
+                                            ./images/marketing/marketing-mobile@2x.jpg  2x
+                                          " media="(max-width: 767px)" type="image/webp" />
+              <source srcset="
+                                            ./images/marketing/marketing-tablet.webp    1x,
+                                            ./images/marketing/marketing-tablet@2x.webp 2x,
+                                            ./images/marketing/marketing-tablet.jpg     1x,
+                                            ./images/marketing/marketing-tablet@2x.jpg  2x
+                                          " media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+              <source srcset="
+                                            ./images/marketing/marketing.webp 1x,
+                                            ./images/marketing/marketing.jpg  1x
+                                          " media="(min-width: 1200px)" type="image/webp" />
+              <img class="team-card__photo" src="./images/marketing/marketing-tablet.jpg" alt="маркетолог" width="354px"
+                height="374px" />
+            </picture>
             <div class="card">
               <h3 class="card__title">Николай Тарасов</h3>
               <p lang="en" class="card__text">Marketing</p>
@@ -260,7 +347,26 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/foto4.jpg" alt="дизайнер" width="270" height="260" />
+            <picture>
+              <source srcset="
+                                            ./images/designer/designer-mobile.webp    1x,
+                                            ./images/designer/designer-mobile@2x.webp 2x,
+                                            ./images/designer/designer-mobile.jpg     1x,
+                                            ./images/designer/designer-mobile@2x.jpg  2x
+                                          " media="(max-width: 767px)" type="image/webp" />
+              <source srcset="
+                                            ./images/designer/designer-tablet.webp    1x,
+                                            ./images/designer/designer-tablet@2x.webp 2x,
+                                            ./images/designer/designer-tablet.jpg     1x,
+                                            ./images/designer/designer-tablet@2x.jpg  2x
+                                          " media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+              <source srcset="
+                                            ./images/designer/designer.webp 1x,
+                                            ./images/designer/designer.jpg  1x
+                                          " media="(min-width: 1200px)" type="image/webp" />
+              <img class="team-card__photo" src="./images/designer/designer-tablet.jpg" alt="дизайнер" width="354px"
+                height="374px" />
+            </picture>
             <div class="card">
               <h3 class="card__title">Михаил Ермаков</h3>
               <p lang="en" class="card__text">UI Designer</p>
