@@ -1,4 +1,3 @@
-// отредактировано
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -23,19 +22,14 @@
   }
 
   .features__item {
-    // display: block;
     margin: 15px;
-    // margin-bottom: 30px;
-    // justify-content: center;
+
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
       width: calc((100% - 60px) / 2);
-      // margin-right: 15px;
-      // margin-left: 15px;
     }
 
     @media screen and (min-width: $desktop) {
       width: calc((100% - 120px) / 4);
-      // margin-bottom: 0;
     }
   }
 
@@ -44,7 +38,7 @@
     justify-content: center;
     align-items: center;
     background-color: $secondary-background;
-    // width: 100%;
+
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
@@ -83,23 +77,3 @@
     }
   }
 }
-
-// .features {
-//   display: block;
-//   padding: 94px 0;
-//   margin: 0 auto;
-
-//   .features__list {
-//     display: flex;
-//     padding: 0;
-//     margin: 0 -15px;
-//   }
-
-//   .features__item {
-//     margin: 0 15px;
-//   }
-
-//   .features__title {
-//     margin-bottom: 10px;
-//   }
-// }

@@ -181,3 +181,174 @@
 //     height: 80px;
 //   }
 // }
+// .page-header {
+//   padding: 0 15px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   border-bottom: 1px solid #ececec;
+
+//   &__logo {
+//     @media screen and (min-width: $tablet) {
+//       margin-right: 88px;
+//     }
+//     @media screen and (min-width: $desktop) {
+//       margin-right: 93px;
+//     }
+//   }
+//   &__container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     font-weight: 500;
+//     letter-spacing: 0.02em;
+//     @media screen and (max-width: 767px) {
+//       padding-top: 16px;
+//       padding-bottom: 16px;
+//     }
+//   }
+// }
+// .main-container {
+//   @media screen and (max-width: 767px) {
+//     display: none;
+//   }
+//   @media screen and (min-width: $tablet) {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     width: 100%;
+//   }
+// }
+
+// .main-nav {
+//   font-size: $primary-font-size;
+//   line-height: 1.14;
+// }
+
+// .site-nav {
+//   // display: none;
+//   @media screen and (min-width: $tablet) {
+//     display: flex;
+//   }
+
+//   font-weight: $secondary-font-weight;
+//   font-size: $primary-font-size;
+//   line-height: $primary-line-height;
+//   letter-spacing: 0.02em;
+
+//   &__link {
+//     position: relative;
+//     display: block;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//     color: $title-text-color;
+//     text-decoration: none;
+//     transition: color $animation-duration $animation-type;
+//   }
+
+//   &__link:hover,
+//   &__link:focus {
+//     color: $accent-color;
+//     opacity: 1;
+//   }
+
+//   &__link--current {
+//     color: $accent-color;
+//   }
+
+//   &__link::after {
+//     position: absolute;
+//     content: "";
+//     display: block;
+//     width: 100%;
+//     height: 4px;
+//     border-radius: 2px;
+//     bottom: 0;
+//     left: 0;
+
+//     background-color: $accent-color;
+//     opacity: 0;
+//     transition: opacity $animation-duration $animation-type;
+//   }
+
+//   &__link--current::after,
+//   &__link:hover::after,
+//   &__link:focus::after {
+//     opacity: 1;
+//   }
+
+//   &__item {
+//     margin-right: 50px;
+//   }
+
+//   &__item:last-child {
+//     margin-right: 0;
+//   }
+// }
+
+// .contacts {
+//   display: block;
+//   font-weight: $secondary-font-weight;
+//   font-size: $primary-font-size;
+//   line-height: $primary-line-height;
+//   letter-spacing: 0.02em;
+//   justify-content: center;
+//   align-items: center;
+
+//   @media screen and (min-width: $desktop) {
+//     font-size: 14px;
+//     line-height: 1.14;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     display: flex;
+//   }
+
+//   &__link {
+//     display: flex;
+//     text-decoration: none;
+//     color: inherit;
+//     transition: color $animation-duration $animation-type;
+
+//     &:hover,
+//     &:focus {
+//       color: $accent-color;
+//     }
+//   }
+// }
+
+// .contacts__item {
+//   @media screen and (min-width: $tablet) and (max-width: 1199px) {
+//     margin-bottom: 10px;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     margin-right: 30px;
+//   }
+// }
+// .contacts__item:last-child {
+//   @media screen and (min-width: $tablet) and (max-width: 1199px) {
+//     margin-bottom: 0;
+//   }
+// }
+
+// .icon-mail {
+//   margin-right: 8px;
+//   fill: currentColor;
+//   width: 14px;
+//   height: 10px;
+//   @media screen and (min-width: $desktop) {
+//     height: 16px;
+//     margin-right: 10px;
+//   }
+// }
+
+// .icon-phone {
+//   margin-right: 8px;
+//   fill: currentColor;
+//   width: 10px;
+//   height: 14px;
+//   @media screen and (min-width: $desktop) {
+//     width: 12px;
+//     height: 16px;
+//     margin-right: 10px;
+//   }
+// }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Studio (Version 2.0)</title>
+  <title>Web Studio (Version 2.1)</title>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -15,7 +15,7 @@
 
 <body>
   <header class="page-header">
-    <!-- <section class="page-header__section"> -->
+    
       <div class="container page-header__container">
         <a href="#" class="logo page-header__logo"><span class="logo--accent">Web</span>Studio</a>
         <div class="main-container">
@@ -46,13 +46,38 @@
               </li>
             </ul>
           </div>
+          <!-- <button class="menu__close-button"type="button" data-menu-button>
+            <svg width="17" height="17">
+              <use class="button-menu-open" href="./images/sprite.svg#icon-burger-menu"></use>
+              <use class="button-menu-close" href="./images/sprite.svg#icon-cross"></use>
+            </svg>
+          </button> -->
         </div>
       </div>
-    <!-- </section> -->
+   
   </header>
+  <div class="mobile-menu" data-menu>
+    <button class="menu-button" type="button" data-menu-button>
+      <svg class="menu-button__icon" width="17" height="17">
+        <use class="button-menu-open" href="./images/sprite.svg#icon-burger-menu"></use>
+        <use class="button-menu-close" href="./images/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <ul class="site-nav list">
+      <li class="site-nav__item">
+        <a class="site-nav__link site-nav__link--current" href="#">Студия</a>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </div>
   <main>
     <!--секция Герой-->
-    <!-- <div class="overlay"> -->
+  
       <section class="overlay">
         <div class="hero-container">
           <h1 class="hero-container__title">Эффективные решения для вашего бизнеса</h1>
@@ -61,7 +86,7 @@
           </button>
         </div>
       </section>
-    <!-- </div> -->
+   
 
     <!--Секция-2 Здесь заголовок должен быть скрыт-->
     <section class="features">
@@ -126,7 +151,7 @@
         <h2 class="title">Чем мы занимаемся</h2>
         <ul class="description list">
           <li class="description__item">
-            <!-- <img src="./image/img.jpg" alt="набор текста" width="370" height="294" /> -->
+          
             <picture>
               <source srcset="
                                                                       ./images/description/img1.webp    1x,
@@ -141,7 +166,7 @@
             <h3 class="description__title">Десктопные приложения</h3>
           </li>
           <li class="description__item">
-            <!-- <img src="./image/img(1).jpg" alt="работа над макетом" width="370" height="294" /> -->
+            
             <picture>
               <source srcset="
                                                                       ./images/description/img2.webp    1x,
@@ -150,13 +175,13 @@
               <img class="description__photo" srcset="
                                                                       ./images/description/img2.jpg    1x,
                                                                       ./images/description/img2@2x.jpg 2x
-                                                                    " src="./images/description/img1.jpg" alt="набор текста"
+                                                                    " src="./images/description/img1.jpg" alt="работа над макетом"
                 width="370px" height="294px" />
             </picture>
             <h3 class="description__title">Мобильные приложения</h3>
           </li>
           <li class="description__item">
-            <!-- <img src="./image/img(2).jpg" alt="работа с цветом" width="370" height="294" /> -->
+         
             <picture>
               <source srcset="
                                                                       ./images/description/img3.webp    1x,
@@ -165,7 +190,7 @@
               <img class="description__photo" srcset="
                                                                       ./images/description/img3.jpg    1x,
                                                                       ./images/description/img3@2x.jpg 2x
-                                                                    " src="./images/description/img3.jpg" alt="набор текста"
+                                                                    " src="./images/description/img3.jpg" alt="работа с цветом"
                 width="370px" height="294px" />
             </picture>
             <h3 class="description__title">Дизайнерские решения</h3>
@@ -180,7 +205,7 @@
         <h2 class="title">Наша команда</h2>
         <ul class="team list">
           <li class="team__item">
-            <!-- <img src="./image/foto1.jpg" alt="дизайнер проекта" width="270" height="260" /> -->
+            
             <picture>
               <source srcset="
                                                         ./images/product-designer/product-designer-mobile.webp    1x,
@@ -237,7 +262,7 @@
             </div>
           </li>
           <li class="team__item">
-            <!-- <img src="./image/foto2.jpg" alt="разработчик" width="270" height="260" /> -->
+           
             <picture>
               <source srcset="
                                                         ./images/frontend-dev/frontend-dev-mobile.webp    1x,
@@ -294,7 +319,7 @@
             </div>
           </li>
           <li class="team__item">
-            <!-- <img src="./image/foto3.jpg" alt="маркетолог" width="270" height="260" /> -->
+          
             <picture>
               <source srcset="
                                                         ./images/marketing/marketing-mobile.webp    1x,
@@ -351,7 +376,7 @@
             </div>
           </li>
           <li class="team__item">
-            <!-- <img src="./image/foto4.jpg" alt="дизайнер" width="270" height="260" /> -->
+          
             <picture>
               <source srcset="
                                                         ./images/designer/designer-mobile.webp    1x,
@@ -601,6 +626,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
