@@ -409,47 +409,19 @@ h5 {
   color: #2196f3;
 }
 
-.hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 400px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-}
-
-.hero__container {
-  display: block;
-  width: 696px;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.hero__title {
-  color: #ffffff;
-  display: block;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
 .overlay {
-  max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  max-width: 480px;
+  max-height: 400px;
+  padding: 118px 0;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero-mobile.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mobile.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-mobile@1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -461,8 +433,8 @@ h5 {
 
 @media screen and (min-width: 480px) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-tablet.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-tablet@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@1x.jpg);
   }
 }
 
@@ -499,6 +471,50 @@ h5 {
     max-height: 600px;
     padding: 200px;
   }
+}
+
+.hero-container {
+  max-width: 360px;
+  margin: 0 auto 30px auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    max-width: 696px;
+  }
+}
+
+.hero-container__title {
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container__title {
+    font-size: 44px;
+    line-height: 1.37;
+  }
+}
+
+.hero-button {
+  display: inline-block;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .button {
@@ -1229,12 +1245,6 @@ h5 {
 .portfolio__link:focus .image-overlay {
   -webkit-transform: translateX(0) translateY(0);
           transform: translateX(0) translateY(0);
-}
-
-.portfolio__image {
-  display: block;
-  width: 100%;
-  height: 100hv;
 }
 
 .portfolio__link {
