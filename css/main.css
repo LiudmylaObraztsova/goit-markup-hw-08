@@ -409,6 +409,167 @@ h5 {
   color: #2196f3;
 }
 
+.button-menu {
+  z-index: 50;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #212121;
+  border: 0;
+  outline-color: transparent;
+}
+
+.button-menu:hover, .button-menu:focus {
+  color: #2196f3;
+}
+
+.button-menu__icon {
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+}
+
+.button-menu.is-open .button-menu__burger {
+  display: none;
+}
+
+.button-menu__cross {
+  display: none;
+}
+
+.button-menu.is-open .button-menu__cross {
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    position: absolute;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+    pointer-events: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 48px 40px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+  }
+}
+
+.menu {
+  font-size: 40px;
+  color: #212121;
+}
+
+.menu__item {
+  margin-bottom: 32px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: black;
+}
+
+.menu__link:focus, .menu__link:hover {
+  color: #2196f3;
+}
+
+.contacts-menu {
+  font-size: 34px;
+  text-decoration: none;
+}
+
+.contacts-menu__item {
+  text-decoration: none;
+}
+
+.contacts-menu__link {
+  display: block;
+  margin-bottom: 32px;
+  font-size: 34px;
+  color: #757575;
+}
+
+.contacts-menu .mail__contacts {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 64px;
+  font-size: 24px;
+  color: #757575;
+}
+
+.social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.social-menu__item:not(:last-child) {
+  position: relative;
+  margin-right: 20px;
+}
+
+.social-menu__link {
+  text-decoration: none;
+  color: #2196f3;
+}
+
+.social-menu__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px);
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.menu--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .overlay {
   margin-left: auto;
   margin-right: auto;
@@ -796,7 +957,6 @@ h5 {
   height: 44px;
   border-radius: 50%;
   color: #afb1b8;
-  fill: currentColor;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1030,11 +1190,6 @@ h5 {
   .follow-us__link:hover, .follow-us__link:focus {
     background-color: #2196f3;
     border-radius: 50%;
-  }
-  .follow-us__icon {
-    width: 20px;
-    height: 20px;
-    fill: #ffffff;
   }
 }
 
@@ -1585,5 +1740,166 @@ h5 {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+
+.button-menu {
+  z-index: 50;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #212121;
+  border: 0;
+  outline-color: transparent;
+}
+
+.button-menu:hover, .button-menu:focus {
+  color: #2196f3;
+}
+
+.button-menu__icon {
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+}
+
+.button-menu.is-open .button-menu__burger {
+  display: none;
+}
+
+.button-menu__cross {
+  display: none;
+}
+
+.button-menu.is-open .button-menu__cross {
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    position: absolute;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+    pointer-events: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 48px 40px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+  }
+}
+
+.menu {
+  font-size: 40px;
+  color: #212121;
+}
+
+.menu__item {
+  margin-bottom: 32px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: black;
+}
+
+.menu__link:focus, .menu__link:hover {
+  color: #2196f3;
+}
+
+.contacts-menu {
+  font-size: 34px;
+  text-decoration: none;
+}
+
+.contacts-menu__item {
+  text-decoration: none;
+}
+
+.contacts-menu__link {
+  display: block;
+  margin-bottom: 32px;
+  font-size: 34px;
+  color: #757575;
+}
+
+.contacts-menu .mail__contacts {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 64px;
+  font-size: 24px;
+  color: #757575;
+}
+
+.social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.social-menu__item:not(:last-child) {
+  position: relative;
+  margin-right: 20px;
+}
+
+.social-menu__link {
+  text-decoration: none;
+  color: #2196f3;
+}
+
+.social-menu__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px);
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.menu--hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 /*# sourceMappingURL=main.css.map */

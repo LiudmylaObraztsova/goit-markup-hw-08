@@ -54,9 +54,14 @@
           </button> -->
         </div>
       </div>
-   
+  <button class="button-menu" type="button" data-menu-button>
+    <svg class="button-menu__icon" width="40" height="40">
+      <use class="button-menu__burger" href="./images/sprite.svg#icon-burger-menu"></use>
+      <use class="button-menu__cross" href="./images/sprite.svg#icon-cross"></use>
+    </svg>
+  </button>
   </header>
-  <div class="mobile-menu" data-menu>
+  <!-- <div class="mobile-menu" data-menu>
     <button class="menu-button" type="button" data-menu-button>
       <svg class="menu-button__icon" width="17" height="17">
         <use class="button-menu-open" href="./images/sprite.svg#icon-burger-menu"></use>
@@ -74,6 +79,52 @@
         <a class="site-nav__link" href="#">Контакты</a>
       </li>
     </ul>
+  </div> -->
+  <div class="mobile-menu" data-menu>
+    <nav class="navigation-menu">
+      <ul class="menu list">
+        <li class="menu__item">
+          <a class="menu__link" href="#">Студия</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <div class="contacts-lists">
+      <ul class="contacts-menu list">
+        <li class="contacts-menu__item">
+          <a href="tel:+380961111111" class="contacts-menu__link">
+            +38 096 111 11 11</a>
+        </li>
+        <li class="contacts-menu__item">
+          <a href="mailto:info@devstudio.com" class="mail__contacts">
+            info@devstudio.com</a>
+        </li>
+      </ul>
+      <!-- <a href="tel:+380961111111" class="contacts-menu__link tel__contacts-menu">
+        <span>+38 096 111 11 11</span></a>
+      <a href="mailto:info@devstudio.com" class="contacts-menu__link mail__contacts-menu">
+        <span>info@devstudio.com</span></a> -->
+      <ul class="social-menu list">
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="#">Instagram</a>
+        </li>
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="#">Twitter</a>
+        </li>
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="#">Facebook</a>
+        </li>
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
   </div>
   <main>
     <!--секция Герой-->
