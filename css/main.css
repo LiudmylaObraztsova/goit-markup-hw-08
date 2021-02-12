@@ -177,9 +177,6 @@ h5 {
 }
 
 .page-header {
-  padding: 0 15px;
-  margin-right: auto;
-  margin-left: auto;
   border-bottom: 1px solid #ececec;
 }
 
@@ -196,6 +193,9 @@ h5 {
 }
 
 .page-header__container {
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,6 +526,7 @@ h5 {
   margin-bottom: 32px;
   font-size: 34px;
   color: #757575;
+  text-decoration: none;
 }
 
 .contacts-menu .mail__contacts {
@@ -1859,6 +1860,7 @@ h5 {
   margin-bottom: 32px;
   font-size: 34px;
   color: #757575;
+  text-decoration: none;
 }
 
 .contacts-menu .mail__contacts {
