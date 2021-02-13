@@ -48,7 +48,56 @@
         </div>
       </div>
     </div>
+    <button class="button-menu" type="button" aria-control="nav-cont" aria-expanded="false" data-menu-button>
+      <svg class="button-menu__icon" width="40" height="40">
+        <use class="button-menu__burger" href="./images/sprite.svg#icon-menu"></use>
+        <use class="button-menu__cross" href="./images/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
   </header>
+  <div class="mobile-menu" id="nav-cont" data-menu>
+    <nav class="navigation-menu">
+      <ul class="menu list">
+        <li class="menu__item">
+          <a class="menu__link" href="./index.html">Студия</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <div class="contacts-lists">
+      <ul class="contacts-menu list">
+        <li class="contacts-menu__item">
+          <a href="tel:+380961111111" class="contacts-menu__link">
+            +38 096 111 11 11</a>
+        </li>
+        <li class="contacts-menu__item">
+          <a href="mailto:info@devstudio.com" class="mail__contacts">
+            info@devstudio.com</a>
+        </li>
+      </ul>
+  
+      <ul class="social-menu list">
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="#">Instagram</a>
+        </li>
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="#">Twitter</a>
+        </li>
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="#">Facebook</a>
+        </li>
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <main>
     <section class="section">
       <div class="container">
@@ -458,6 +507,7 @@
       </div>
     </section>
   </footer>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

@@ -49,7 +49,9 @@
           
         </div>
       </div>
-  <button class="button-menu" type="button" data-menu-button>
+  <button class="button-menu" type="button" aria-control="nav-cont"
+          class="btn-menu"
+          aria-expanded="false" data-menu-button>
     <svg class="button-menu__icon" width="40" height="40">
       <use class="button-menu__burger" href="./images/sprite.svg#icon-menu"></use>
       <use class="button-menu__cross" href="./images/sprite.svg#icon-cross"></use>
@@ -57,7 +59,7 @@
   </button>
   </header>
   
-  <div class="mobile-menu" data-menu>
+  <div class="mobile-menu" id="nav-cont" data-menu>
     <nav class="navigation-menu">
       <ul class="menu list">
         <li class="menu__item">
@@ -83,10 +85,7 @@
             info@devstudio.com</a>
         </li>
       </ul>
-      <!-- <a href="tel:+380961111111" class="contacts-menu__link tel__contacts-menu">
-        +38 096 111 11 11</a>
-      <a href="mailto:info@devstudio.com" class="contacts-menu__link mail__contacts-menu">
-        info@devstudio.com</a> -->
+     
       <ul class="social-menu list">
         <li class="social-menu__item">
           <a class="social-menu__link" href="#">Instagram</a>
