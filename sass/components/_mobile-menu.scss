@@ -13,6 +13,7 @@
   color: $title-text-color;
   border: 0;
   outline-color: transparent;
+  transition: color $animation-duration $animation-type;
   &:hover,
   &:focus {
     color: $accent-color;
@@ -73,8 +74,8 @@
 
   &__link {
     text-decoration: none;
-    color: black;
-    // @include transition(color);
+    color: $title-text-color;
+    transition: color $animation-duration $animation-type;
     &:focus,
     &:hover {
       color: $accent-color;
