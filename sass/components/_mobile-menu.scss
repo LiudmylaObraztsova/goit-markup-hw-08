@@ -92,8 +92,12 @@
     display: block;
     margin-bottom: 32px;
     font-size: 34px;
-    color: $primary-text-color;
+    color: $accent-color;
     text-decoration: none;
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
   }
   .mail__contacts {
     display: block;
